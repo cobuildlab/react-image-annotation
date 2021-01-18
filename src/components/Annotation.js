@@ -295,11 +295,11 @@ export default compose(
           })
         )}
         {props.annotations.map(annotation => (
-          this.shouldAnnotationBeActive(annotation, topAnnotationAtMouse)
-          && (
+          (
             renderContent({
               key: annotation.data.id,
-              annotation: annotation
+              annotation: annotation,
+              active: this.shouldAnnotationBeActive(annotation, topAnnotationAtMouse)
             })
           )
         ))}

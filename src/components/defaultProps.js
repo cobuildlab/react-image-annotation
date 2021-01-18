@@ -90,10 +90,11 @@ export default {
         return null
     }
   },
-  renderContent: ({ key, annotation }) => (
+  renderContent: ({ key, annotation ,active}) => (
     <Content
       key={key}
       annotation={annotation}
+      active={active}
     />
   ),
   renderOverlay: ({ type, annotation }) => {

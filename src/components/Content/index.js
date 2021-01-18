@@ -23,6 +23,7 @@ function Content (props) {
         position: 'absolute',
         left: `${geometry.x}%`,
         top: `${geometry.y + geometry.height}%`,
+        display:props.active?"block":"none",
         ...props.style
       }}
       className={props.className}
